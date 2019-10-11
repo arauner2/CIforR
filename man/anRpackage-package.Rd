@@ -1,24 +1,24 @@
-\name{anRpackage-package}
-\alias{anRpackage-package}
-\alias{anRpackage}
+\name{Example-package}
+\alias{Example-package}
+\alias{Example}
 \docType{package}
 \title{
-\packageTitle{anRpackage}
+\packageTitle{Example}
 }
 \description{
-\packageDescription{anRpackage}
+\packageDescription{Example}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{anRpackage}
-\packageIndices{anRpackage}
+\packageDESCRIPTION{Example}
+\packageIndices{Example}
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-\packageAuthor{anRpackage}
+\packageAuthor{Example}
 
-Maintainer: \packageMaintainer{anRpackage}
+Maintainer: \packageMaintainer{Example}
 }
 \references{
 ~~ Literature or other references for background information ~~

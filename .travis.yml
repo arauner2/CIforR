@@ -2,18 +2,13 @@ language: r
 cache: packages
 sudo: false
 
-repos:
-    CRAN: https://cloud.r-project.org
-
 r_packages:
     - lintr
-    - covr
     - testthat
 
 script:
     - R CMD build .
+    - R CMD check *.tar.gz
 
 after_script:
     - Rscript -e 'lintr::lint_package()'
-    - Rscript -e 'testthat::test_dir("tests")'
-    - Rscript -e 'cover::codecov()'

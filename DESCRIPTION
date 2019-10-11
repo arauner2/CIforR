@@ -6,5 +6,6 @@ Date: 2019-10-11
 Author: Allie Rauner
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Depends: R (>= 3.6.1)
+Suggests: testthat (>= 2.2.1)
 Description: It currently has addition and subtraction as well as some tests to run.
 License: What license is it under? None
