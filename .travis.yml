@@ -5,7 +5,7 @@ sudo: false
 repos:
     CRAN: https://cloud.r-project.org
 
-r_pacakges:
+r_packages:
     - lintr
     - covr
 
@@ -14,4 +14,5 @@ script:
 
 after_script:
     - Rscript -e 'lintr::lint_package()'
+    - Rscript -e 'testthat::test_dir("Tests")'
     - Rscript -e 'cover::codecov()'
