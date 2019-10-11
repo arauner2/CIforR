@@ -1,0 +1,17 @@
+language: r
+cache: packages
+sudo: false
+
+repos:
+    CRAN: https://cloud.r-project.org
+
+r_pacakges:
+    - lintr
+    - covr
+
+script:
+    - R CMD build .
+
+after_script:
+    - Rscript -e 'lintr::lint_package()'
+    - Rscript -e 'cover::codecov()'
