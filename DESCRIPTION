@@ -9,3 +9,4 @@ Depends: R (>= 3.6.1)
 Suggests: testthat (>= 2.2.1)
 Description: It currently has addition and subtraction as well as some tests to run.
 License: What license is it under? None
+RoxygenNote: 6.1.1
