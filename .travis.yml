@@ -8,11 +8,12 @@ repos:
 r_packages:
     - lintr
     - covr
+    - testthat
 
 script:
     - R CMD build .
 
 after_script:
     - Rscript -e 'lintr::lint_package()'
-    - Rscript -e 'testthat::test_dir("Tests")'
+    - Rscript -e 'testthat::test_dir("tests")'
     - Rscript -e 'cover::codecov()'

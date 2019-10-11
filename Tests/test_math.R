@@ -1,4 +1,4 @@
-source("../Scripts/math.R")
+source("../math.R")
 
 test_that("test add two positive numbers", {
   expected_result <- 3
